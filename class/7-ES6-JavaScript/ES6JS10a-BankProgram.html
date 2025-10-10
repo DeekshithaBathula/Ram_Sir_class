@@ -1,0 +1,34 @@
+<html>
+    
+<script>
+class BankAccount {
+    constructor(accountNumber, balance) {
+        this.accountNumber = accountNumber; // Data
+        this.balance = balance;         // Data
+    }
+
+    deposit(amount) { // Method operating on data
+        this.balance += amount;
+        console.log('Deposited ${amount}. New balance: ${this.balance}');
+    }
+
+    withdraw(amount) { // Method operating on data
+        if (this.balance >= amount) {
+            this.balance -= amount;
+            console.log('Withdrew ${amount}. New balance: ${this.balance}');
+        } else {
+            console.log("Insufficient funds.");
+        }
+    }
+}
+
+const myAccount = new BankAccount("123456789", 1000);
+myAccount.deposit(500); // We interact through methods
+// myAccount.balance = -100; // Directly accessing and changing can break logic (problem addressed by private fields)
+
+</script>
+
+<body>
+    <h1>Bank Program with OOPS</h1>
+</body>
+</html>

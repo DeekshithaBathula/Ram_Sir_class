@@ -1,0 +1,23 @@
+<html>
+    <head>
+        <title>Throw Exception</title>
+    </head>
+    <body>
+        <script>
+            function checkAge(age) {
+                if (age < 18) {
+                    throw "Age must be 18 or older";
+                }
+                return "Access granted";
+            }
+            try{
+                let result=checkAge(15);
+                document.write(result);
+            }catch(err){
+                document.write("Caught Exception: " + err);
+            }finally{
+                document.write("<br> End of program");
+            }
+        </script>
+    </body>
+</html>

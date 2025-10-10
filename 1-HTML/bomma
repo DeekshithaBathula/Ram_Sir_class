@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .content{
+            display: flex;
+            gap: 20px;
+        }
+        .para-box{
+            width: 500px;
+            background-color: black;
+            color: white;
+            font-size: 25px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="content">
+
+        <p class="para-box">The creative, technical and industry preferred tools shall be explored by the students with our Extensive
+            Infrastructure, we are here to take a step forward and provide education in all streams of Media.</p><br>
+        <img src="award2.jpg" width="50%" height="200px">
+    </div>
+</body>
+
+</html>
+
+         /* div{
+            margin-top: 15%;
+            height: 150px;
+            width: 200px;
+            font-size:medium;
+            text-align: center;
+            padding-top: 10px;
+            background-color:black;
+        } 
+        .image{
+            margin-top: 15%;
+            margin-right: 30%;
+           height:100%;
+           width:300px;
+        }
+        p{
+            color:white;
+        } 
+         p{
+            color: black;
+         }
+        .content{
+            display: flex;
+        }
+        </style>
+        </head>
+        <body>
+            <div class="content">
+
+            <p>The creative, technical and industry preferred tools shall be explored by the students with our Extensive Infrastructure, we are here to take a step forward and provide education in all streams of Media.</p><br>
+           <img src="award2.jpg">*/

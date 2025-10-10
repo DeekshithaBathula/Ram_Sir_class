@@ -1,0 +1,66 @@
+<html>
+    <head>
+        <title>Registration Form</title>
+    </head>
+    <body bgcolor="lightpink">
+        <font size="6">Registration form</font>
+        <form action="Login.html">
+            <table>
+                <tr>
+                    <form action="loginsuccess.html">
+                        FirstName: <input type="text" name="fname" placeholder="FName" autofocus> <br>
+        LastName: <input type="text" name="lname" placeholder="LName"> <br>
+            Enter Valid Email :
+            <input type="email" name="mymail" id="emailid"> <br>
+                <tr>
+                    <td>
+                        Gender:
+                    <input type="radio" name="Gender">Male
+                        <input type="radio" name="Gender">Female
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                         Enter 10 digit Mobile No :
+                    </td>
+                    <td>
+                        <select>
+                            <option>91</option>
+                            <option>92</option>
+                            <option>93</option>
+                            <option>19</option>
+                            <option>18</option>
+                            <option>17</option>
+                            <option>99</option>
+                        </select>
+            <input type="tel" name="person1" id="myid" pattern="[0-9]{10}"title="The ten digits Number"> <br>
+                    </td>
+                </tr>
+            </table>
+            Date of Birth:
+        <input type="date" name="bname"><br>
+             <font size="4">Way of travelling?</font><br>
+                <input type="radio" name="Bus" value="Bus">Small<br>
+                <input type="radio" name="Bike" value="Bike">Medium<br>
+                <input type="radio" name="car" value="Car">Large<br>
+                <font size="3">My Skills</font><br>
+                <input type="checkbox" name="bike">I Know Html <br> 
+<input type="checkbox" name="car"> I Know CSS <br>
+<input type="checkbox" name="house">I Know JS
+<h5>Write about yourself</h5>
+        <textarea name="mytext" cols="30" rows="15">
+      Text area.......
+        </textarea><br>
+        Fees:<input type="number" min="20000" max="100000" step="5000">Based on Course<br>
+        Select a Week for classes:
+        <input type="week" name="week1">
+         Select Month of joining:
+        <input type="month" name="month1"><br>
+         <tr>
+                    <td>
+                        <input type="submit" value="submit" name="">
+                    </td>
+                </tr>
+        </form>
+    </body>
+</html>

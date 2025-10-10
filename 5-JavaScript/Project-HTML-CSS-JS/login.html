@@ -1,0 +1,56 @@
+<html>
+
+<head>
+    <title>Login page</title>
+</head>
+<style>
+    body {
+        height: 300px;
+        width: 300px;
+        margin: 10%;
+        margin-left: 40%;
+        background-color: rgb(243, 238, 238);
+        text-align: center;
+        border-radius: 5px;
+        border: 2px solid black;
+        padding-top: 20px;
+
+    }
+
+    .button2 {
+        background-color: green;
+        border-radius: 10px;
+        color: white;
+        height: 25px;
+        width: 80px;
+        border-color: green;
+    }
+</style>
+<script>
+    function loginvalidation() {
+        var Uname = document.myform.Username.value;
+        var Pass = document.myform.Password.value;
+        if (Uname == null || Uname == "") {
+            alert("Username can't be blank");
+            return false;
+        }
+        else if (Pass.length < 6) {
+            alert("Password must be atleast 6 characters long.");
+            return false;
+        }
+    }
+
+</script>
+
+<body style="background-color:lavender">
+    <form name="myform" action="home.html" onsubmit="return loginvalidation()">
+        <h1>Login page</h1>
+        Username:
+        <input type="text" name="Username" placeholder="Username" autofocus> <br>
+        Password:
+        <input type="password" name="Password" placeholder="password"><br><br><br><br>
+        <button type="submit" class="button2">Sign up</button>
+    </form>
+</body>
+
+</html>
